@@ -1,0 +1,82 @@
+package Practice1Cafe;
+
+import java.util.Scanner;
+
+public class CafeKiosk {
+	
+	public static void main(String[] args) {
+		
+/*
+		주문입력 삭제 결제 끝내기
+		
+		총 주문개수, 주문목록, 총 주문금액
+*/	
+		
+		Scanner sc = new Scanner(System.in);
+		
+		int qty=0;
+		String orderList [] = new String [5];
+		int totPrice=0;
+		
+		System.out.print("============= CAFE ORDER HERE ============="
+				+ "\n1.주문하기 2.주문취소 3.결제하기 4.끝내기"
+				+ "\n메뉴 선택: ");
+		int selectMenu = sc.nextInt();
+		System.out.println();
+		
+		switch (selectMenu){
+			case 1: 
+				System.out.print("================ 주문가능 메뉴 ================"
+						+ "\n1.에스프레소 3000원\n2.아메리카노 3500원\n3.카페라떼 3800원\n4.밀크티 4200원\n5.청귤에이드 4000원"
+						+ "\n-------------------------------------------"
+						+ "\n주문할 메뉴 선택: ");
+				int orderMenu = sc.nextInt();
+				System.out.println();
+				
+				switch (orderMenu) {
+					case 1:	
+						String menu1="에스프레소";
+						qty++;
+						totPrice+=3000;
+						System.out.println(menu1 + "가 메뉴에 추가되었습니다."
+								+ "\n========================================");
+						return;
+					case 2:
+						String menu2="아메리카노";
+						qty++;
+						totPrice+=3500;
+						System.out.println(menu2 + "가 메뉴에 추가되었습니다.");
+					case 3:
+						String menu3="카페라떼";
+						qty++;
+						totPrice+=3800;
+						System.out.println(menu3 + "가 메뉴에 추가되었습니다.");
+					case 4:
+						String menu4="밀크티";
+						qty++;
+						totPrice+=4200;
+						System.out.println(menu4 + "가 메뉴에 추가되었습니다.");
+					case 5:
+						String menu5="청귤에이드";
+						qty++;
+						totPrice+=4000;
+						System.out.println(menu5 + "가 메뉴에 추가되었습니다.");
+					default:
+						System.out.println("잘못된 선택입니다.");
+				}
+				
+				
+			case 2:
+			case 3:
+			case 4:
+				System.out.println("프로그램을 종료합니다.");
+				break;
+			default: 
+				System.out.println("잘못된 입력입니다.");
+		}
+		
+		
+		
+	}
+
+}

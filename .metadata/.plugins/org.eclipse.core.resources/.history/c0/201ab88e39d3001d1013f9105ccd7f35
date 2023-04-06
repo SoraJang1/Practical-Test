@@ -1,0 +1,15 @@
+package day15;
+
+public class arrayForEach {
+	
+	public static void main(String[] args) {
+		
+		String a [] = {"Java", "Hello", "Programming"};
+		
+		for (String i : a) {}
+		// i라는 변수가 a라는 배열을 순환할게
+		System.out.println(i);
+		
+	}
+
+}

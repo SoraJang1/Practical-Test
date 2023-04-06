@@ -1,0 +1,24 @@
+package day14;
+
+import java.util.Scanner;
+
+public class Student {
+	public static void main(String[] args) {
+		
+		int scores[][] = new int[4][3];
+		
+		Scanner sc = new Scanner (System.in);
+		System.out.println("1번 학생 점수 ----------");
+		System.out.println("국어 : ");
+		scores[0][0] = sc.nextInt();
+		System.out.println("영어 : ");
+		scores[0][1] = sc.nextInt();		
+		System.out.println("수학 : ");
+		scores[0][2] = sc.nextInt();		
+		
+		
+		
+		
+	}
+
+}
