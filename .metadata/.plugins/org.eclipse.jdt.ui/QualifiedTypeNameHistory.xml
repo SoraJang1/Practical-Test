@@ -25,4 +25,7 @@
     <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="day19.Car"/>
+    <fullyQualifiedTypeName name="day19.CarPractice"/>
+    <fullyQualifiedTypeName name="day20.CarPractice"/>
 </qualifiedTypeNameHistroy>
